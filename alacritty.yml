@@ -1,0 +1,33 @@
+# ARCHIVO DE CONFIGURACION DE ALACRITTY
+
+# CONFIGURACION DE LA VENTANA DE LA TERMINAL
+window:
+  # Especificamos las dimenciones de la ventana (columnas y lineas)
+  dimensions:
+    columns: 105
+    lines: 30
+  # Especificamos el espaciado entre el contenido de la ventana y el borde de la misma
+  padding:
+    x: 15
+    y: 15
+
+# CONFIGURACION DE LA FONT DE LA TERMINAL (Estilo de letras)
+font:
+  normal:
+    # La famila a la que pertenece la fuente en este caso es Fira Code pero tambien podria ser otra como monospace
+    family: FiraCode Nerd Font
+    # El estilo de la fuente en este caso es regular pero tambien podria ser Bold o Ligth
+    style: Regular
+  # Tamaño de letra
+  size: 9
+
+  offset:
+    x: 0
+    y: 0
+
+# OPACIDAD / TRANSPARENCIA DE LA VENTANA
+background_opacity: 1
+
+# IMPORTAMOS LOS COLORES DE LA TERMINAL
+import:
+  - ~/.config/alacritty/one_dark.yml
